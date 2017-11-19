@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6787cc3d74ecb0148a50948561c79321, type: 3}
+  m_Name: MoveSettingEditorSettings
+  m_EditorClassIdentifier: 
+  searchPath: 4173736574732f5265736f75726365732f507265666162732f56656869636c65732f426f6174733b4173736574732f5265736f75726365732f507265666162732f56656869636c65732f426f7373
+  source: {fileID: 11500000, guid: 95dfe533c864f9c40881fda177b54470, type: 3}
+  methods:
+  - 496e69744f74686572436f6d706f6e656e7473
+  target: {fileID: 11500000, guid: ba26962acc942ec468837e74c0ebad52, type: 3}
+  testOnOnePrefab: 0

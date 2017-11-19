@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1062c3ea1fb6bee4098c6be306f5a3a6, type: 3}
+  m_Name: VkSettings
+  m_EditorClassIdentifier: 
+  mobileAppId: 6172741
+  levelImgIds:
+  - 
+  achievementImgIdsKeys: 2f0000002d00000026000000300000002e00000029000000250000002b00000027000000310000002c00000028000000340000002a0000003200000033000000
+  achievementImgIdsValues:
+  - photo-85538509_368948232
+  - photo-85538509_368947819
+  - photo-85538509_368948263
+  - photo-85538509_368947809
+  - photo-85538509_368947630
+  - photo-85538509_368948243
+  - photo-85538509_368947624
+  - photo-85538509_368947632
+  - photo-85538509_368948172
+  - photo-85538509_368947621
+  - photo-85538509_368948256
+  - photo-85538509_368947618
+  - photo-85538509_368947818
+  - photo-85538509_368947813
+  - photo-85538509_368948249
+  - photo-85538509_368947814
+  gameGroupId: 
+  vkGamingGroupId: 78616012
+  winPhoneProductId: 

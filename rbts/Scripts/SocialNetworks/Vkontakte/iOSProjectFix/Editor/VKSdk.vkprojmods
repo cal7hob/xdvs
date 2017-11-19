@@ -1,0 +1,23 @@
+{
+    "group": "VKSdk",
+    "libs": [],
+    "frameworks": ["SafariServices.framework:weak",					
+				   "EventKit.framework:weak",
+				   "EventKitUI.framework:weak",
+				   "MessageUI.framework:weak",
+				   "Social.framework:weak",
+				   "CoreTelephony.framework:weak",
+				   "CoreData.framework:weak"],
+    "librarysearchpaths":[],
+    "frameworksearchpaths":["VKSdk"],
+    "headerpaths": [],
+    "files":   ["VKSdk/VKSdkResources.bundle",
+                "VKSdk/VKForUnity.h",
+                "VKSdk/VKForUnity.mm",
+                ],
+    "folders": ["VKSdk/library/Source"],
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+    "linker_flags": [],
+    "buildSettings":{}
+}

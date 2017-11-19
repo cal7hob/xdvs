@@ -1,0 +1,49 @@
+241a242,248
+> #if TOUCH_SCREEN_KEYBOARD
+>     public TouchScreenKeyboard GetTouchScreenKeyboard()
+>     {
+>         return keyboard;
+>     }
+> #endif
+> 
+255c262,263
+<         while (inputLabel.GetComponent<Renderer>().bounds.extents.x * 2 > fieldLength)
+---
+>         float localSpaceLabelWidth = inputLabel.GetComponent<Renderer>().bounds.size.x / inputLabel.transform.lossyScale.x;
+>         while (localSpaceLabelWidth > fieldLength)
+257c265
+<             modifiedText=modifiedText.Substring(1, modifiedText.Length - 1);
+---
+>             modifiedText = modifiedText.Substring(1, modifiedText.Length - 1);
+259a268,269
+> 
+>             localSpaceLabelWidth = inputLabel.GetComponent<Renderer>().bounds.size.x / inputLabel.transform.lossyScale.x;
+416a427,428
+>         tk2dFontChar chr;
+> 
+419d430
+<             tk2dFontChar chr;
+431a443,465
+>         #region Work-around for reducing gap between text and cursor.
+>         // I could make cursor's GameObject with sprite instead of "|" TextMesh, 
+>         // but it is what it is.
+> 
+>         // Consider our cursor's tk2dTextMesh. Bad.
+>         var cursorTextMesh = cursor.GetComponent<tk2dTextMesh>();
+>         var cursorChar = cursorTextMesh.text[0];
+> 
+>         if (cursorTextMesh.font.inst.useDictionary)
+>         {
+>             chr = cursorTextMesh.font.inst.charDict[cursorChar];
+>         }
+>         else
+>         {
+>             chr = cursorTextMesh.font.inst.chars[cursorChar];
+>         }
+> 
+>         // For the buggy(?) fonts we consider cursor's tk2dTextMesh's spacing as well.
+>         cursorOffset -= (chr.p0.x * cursorTextMesh.scale.x - cursorTextMesh.Spacing) / 2;
+>         #endregion
+> 
+>         float renderBoundsRight = inputLabel.GetComponent<Renderer>().bounds.extents.x / gameObject.transform.lossyScale.x;
+>         cursor.transform.localPosition = new Vector3(inputLabel.transform.localPosition.x + (renderBoundsRight + cursorOffset) * multiplier, cursor.transform.localPosition.y, cursor.transform.localPosition.z);

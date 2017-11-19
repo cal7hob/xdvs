@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af17cdb4fb467b4f8d6783aab80d7ae, type: 3}
+  m_Name: OdnoklassnikiSettings
+  m_EditorClassIdentifier: 
+  appId: 1252182528
+  appKey: CBALMDKLEBABABABA
+  appSecretKey: 997695DD5291C804253602B2
+  appName: Tank Force
+  forceOAuth: 0
+  fallbackToOAuth: 1
+  useXML: 0
+  logAllRequests: 1
+  scope:
+    scopes:
+    - APP_INVITE
+    - PHOTO_CONTENT
+    - VALUABLE_ACCESS
+    customScopes: []
+  debugAccessToken: tkn1cKjG9IW5fe1QvG3W0SARyKgfxvinBYb4yzrBT0Sa2Cahxz8bLJQLhOz3ummuQA1aq
+  debugSessionKey: b8bc6691098d767ac65eb26f1546597b
